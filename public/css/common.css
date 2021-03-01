@@ -1,0 +1,14 @@
+*{margin: 0;padding: 0;}
+ul,ol{list-style: none;}
+img{display: block;}
+h1,h2,h3{font-size: 0.16rem;font-weight: normal;}
+html{ height:100%;font-size: 26.6666666667vw;}
+body{ height:100%;font-size: 0.16rem;}
+a{text-decoration: none;color: black;}
+
+.l{float: left;}
+.r{float:right;}
+.clear::after{content: '';clear: both;display: block;}
+
+#main{display: flex;height: 100%;flex-direction: column;overflow: auto;position: relative;}
+#content{flex: 1;overflow: auto;margin-bottom: 0.5rem;position: relative;display: flex;flex-direction: column;}

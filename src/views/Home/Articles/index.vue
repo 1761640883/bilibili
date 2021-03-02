@@ -12,7 +12,7 @@
             <div class="articles_content">
                 <div class="articles_content_title">
                     <div class="articles_content_title_left">
-                        <img v-if="data.userinfo" :src="data.userinfo.user_img" @click.stop="$router.push(`/author/${data.userid}`)">
+                        <img v-if="data.userinfo" :src="data.userinfo.user_img">
                         <img v-else src="/img/noface.jpg@48w_48h_1c.png" alt="图片加载失败">
                         <div v-if="data.userinfo">
                             <p>{{data.userinfo.name}}</p>
@@ -32,10 +32,7 @@
                     <span>{{data.userid}}观看</span><span>{{data.id}}弹幕</span><span>{{data.date}}</span>
                 </div>
                 <div class="articles_content_bottom" :key="iscollection">
-                    <i class="iconfont icondianzan"></i><span>点赞</span>
                     <i :class="iscollection? 'iconfont iconshoucang active':'iconfont iconshoucang'" @click="handleToCollection"></i><span @click="handleToCollection">收藏</span>
-                    <i class="iconfont iconhuancun"></i><span>缓存</span>
-                    <i class="iconfont iconfenxiang"></i><span>分享</span>
                 </div>
             </div>
             <div class="articles_center_commend">
@@ -101,7 +98,7 @@ export default {
     methods: {
         async articleitemDate(){// 获取视频详情页
             const res = await this.$http.get('/article/' + this.id);
-            console.log(res);
+            // console.log(res);
             this.data = res.data[0];
             this.loading = true;
             this.subscriptClick();
@@ -279,7 +276,7 @@ export default {
         flex-flow: column;
         .articles_video{
             width: 100%;
-            height: 212px;
+            height: 2.12rem;
             overflow: hidden;
             video{
                 width: 100%;
@@ -289,27 +286,27 @@ export default {
             flex: 1;
             overflow: auto;
             .articles_title{
-                padding: 12px;
+                padding: 0.12rem;
                 display: flex;
                 align-items: center;
                 p{
-                    width: 48px;
-                    height: 20px;
-                    font-size: 11px;
+                    width: 0.48rem;
+                    height: 0.2rem;
+                    font-size: 0.11rem;
                     background: #f4f4f4;
-                    border-radius: 10px;
+                    border-radius: 0.1rem;
                     color: #fb7299;
-                    line-height: 20px;
+                    line-height: 0.2rem;
                     text-align: center;
-                    margin-right: 6px;
+                    margin-right: 0.06rem;
                 }
                 h2{
-                    font-size: 16px;
+                    font-size: 0.16rem;
                     flex: 1;
                 }
             }
             .articles_content{
-                padding: 0 12px;
+                padding: 0 0.12rem;
                 .articles_content_title{
                     display: flex;
                     justify-content: space-between;
@@ -318,35 +315,35 @@ export default {
                         display: flex;
                         align-items: center;
                         img{
-                            height: 38px;
-                            width: 38px;
+                            height: 0.38rem;
+                            width: 0.38rem;
                             border-radius: 50%;
-                            border: 1px solid #bfbfbf;
+                            border: 0.01rem solid #bfbfbf;
                         }
                         div{
                             display: flex;
                             flex-flow: column;
                             justify-content:space-evenly;
-                            margin-left: 8px;
+                            margin-left: 0.08rem;
                         p{
                                 &:nth-of-type(1){
-                                    font-size: 14px;
+                                    font-size: 0.14rem;
                                 }
                                 &:nth-of-type(2){
-                                    font-size: 10px;
+                                    font-size: 0.1rem;
                                     color: #9b99a4;
                                 }
                             } 
                         } 
                     }
                     .articles_content_title_right{
-                        width: 68px;
-                        height: 25px;
-                        border: 1px solid #fc88ad;
-                        border-radius: 5px;
+                        width: 0.68rem;
+                        height: 0.25rem;
+                        border: 0.01rem solid #fc88ad;
+                        border-radius: 0.05rem;
                         color: #fc83a5;
-                        font-size: 12px;
-                        line-height: 23px;
+                        font-size: 0.12rem;
+                        line-height: 0.23rem;
                         text-align: center;
                     }
                     .subscriptactive{
@@ -357,40 +354,40 @@ export default {
                 
                 
                 .articles_content_center{
-                    font-size: 10px;
+                    font-size: 0.1rem;
                     color: #a2a7a9;
-                    margin-top: 10px;
+                    margin-top: 0.1rem;
                     span{
-                        padding-right: 12px;
+                        padding-right: 0.12rem;
                     }
                 }
                 .articles_content_bottom{
-                    font-size: 10px;
+                    font-size: 0.1rem;
                     color: #757575;
                     display: flex;
                     align-items: center;
-                    padding: 12px 0;
+                    padding: 0.12rem 0;
                     .active{
                         color: #fb7299;
                     }
                     span{
-                        margin-right: 20px;
-                        padding-top: 2px;
+                        margin-right: 0.2rem;
+                        padding-top: 0.02rem;
                     }
                     i{
-                        padding-right: 6px;
-                        padding-top: 1.6px;
+                        padding-right: 0.06rem;
+                        padding-top: 0.016rem;
                     }
                 }
             } 
             .articles_center_commend{
-                border-top: 1px solid #f7f7f7;
-                padding: 0 12px;
+                border-top: 0.01rem solid #f7f7f7;
+                padding: 0 0.12rem;
                 h2{
-                    height: 46px;
-                    font-size: 14px;
+                    height: 0.46rem;
+                    font-size: 0.14rem;
                     color: #757575;
-                    line-height: 46px;
+                    line-height: 0.46rem;
                 }
                 ul{
                     display: flex;
@@ -443,28 +440,28 @@ export default {
                 }
             }
             .articles_center_comments{
-                border-top: 1px solid #f0f0f0;
+                border-top: 0.01rem solid #f0f0f0;
                 position: relative;
                 h2{
-                    height: 46px;
-                    font-size: 14px;
+                    height: 0.46rem;
+                    font-size: 0.14rem;
                     color: #757575;
-                    padding:0 12px;
-                    line-height: 46px;
-                    margin-bottom: -10px;
+                    padding:0 0.12rem;
+                    line-height: 0.46rem;
+                    margin-bottom: -0.1rem;
                 }
                 .articles_center_comments_position{
-                    padding: 14px 12px;
+                    padding: 0.14rem 0.12rem;
                     display: flex;
                     align-items: center;
                     position: sticky;
                     top: 0;
                     img{
-                        height: 30px;
-                        width: 30px;
+                        height: 0.3rem;
+                        width: 0.3rem;
                         border-radius: 50%;
-                        border: 1px solid #bfbfbf;
-                        margin-right: 10px;
+                        border: 0.01rem solid #bfbfbf;
+                        margin-right: 0.1rem;
                     }
                     input{
                         background: #f4f4f4;
@@ -473,18 +470,18 @@ export default {
                         border-radius: 0.15rem;
                         border: none;
                         outline: none;
-                        padding-left: 8px;
+                        padding-left: 0.08rem;
                         flex: 1;
                     }
                     span{
-                        height: 30px;
-                        padding: 0 10px;
-                        border-radius: 15px;
+                        height: 0.3rem;
+                        padding: 0 0.1rem;
+                        border-radius: 0.15rem;
                         background: #fb6992;
                         color: white;
-                        margin-left: 10px;
-                        line-height: 30px;
-                        font-size: 12px;
+                        margin-left: 0.1rem;
+                        line-height: 0.3rem;
+                        font-size: 0.12rem;
                     }
                 }
             }

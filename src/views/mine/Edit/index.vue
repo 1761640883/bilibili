@@ -93,7 +93,7 @@ export default {
                 },
                 onOk: () => {
                     if(key == 'gender'){
-                        console.log(this.value)
+                        // console.log(this.value)
                         if(this.value == '男' || this.value == '女'){
                             this.model[key] = this.value;
                             // console.log(this.model[key]);
@@ -159,7 +159,7 @@ export default {
             align-items: center;
             justify-content: center;
             padding: 0.15rem 0;
-            border-top: 1px solid #f4f4f4;
+            border-top: 0.01rem solid #f4f4f4;
         }
     }
 </style>

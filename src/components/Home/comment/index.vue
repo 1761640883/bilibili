@@ -52,35 +52,35 @@ export default {
         ul{
             width: 100%;
             li{
-                padding: 5px 12px;
-                border-top: 1px solid #f0f0f0;
+                padding: 0.05rem 0.12rem;
+                border-top: 0.01rem solid #f0f0f0;
                 .comment_user{
-                    height: 40px;
+                    height: 0.4rem;
                     display: flex;
                     .comment_user_left{
-                        width: 44px;
+                        width: 0.44rem;
                         img{
-                            height: 30px;
-                            width: 30px;
+                            height: 0.3rem;
+                            width: 0.3rem;
                             border-radius: 50%;
-                            border: 1px solid #bfbfbf;
+                            border: 0.01rem solid #bfbfbf;
                         }
                     }
                     .comment_user_right{
                         flex: 1;
                         display: flex;
                         justify-content: space-between;
-                        font-size: 13px;
+                        font-size: 0.13rem;
                         color: #8a8a8a;
                     }
                 }
                 .comment_text{
-                    margin-left: 44px;
-                    font-size: 14px;
-                    margin-top: -14px;
+                    margin-left: 0.44rem;
+                    font-size: 0.14rem;
+                    margin-top: -0.14rem;
                     .comment_text_ul{
                         background: #f4f4f4;
-                        margin: 10px 0;
+                        margin: 0.1rem 0;
                     }
                 }
             }

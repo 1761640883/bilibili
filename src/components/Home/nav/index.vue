@@ -34,7 +34,7 @@ export default {
             var num = 0;
             for(var i = 0; i < lis.length; i++){
                 if(lis[i].innerHTML.search(name) == 0){
-                    console.log('ok')
+                    // console.log('ok')
                     num = i
                 }
             }
@@ -84,7 +84,7 @@ export default {
             }
         }
         .navBtn{
-            width: 80px;
+            width: 0.8rem;
             display: flex;
             justify-content: center;
             align-items: center;

@@ -31,7 +31,7 @@ export default {
                     'Authorization': 'Bearer ' + localStorage.getItem('token')
                 }
             } */)
-            console.log(res)
+            // console.log(res)
             this.model = res.data[0]
         }
     },

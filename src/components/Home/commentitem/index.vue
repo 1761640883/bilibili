@@ -32,17 +32,17 @@ export default {
 <style lang="scss" scoped>
     .commentitem{
         .commentitem_one{
-            font-size: 13px;
-            padding: 4px 0;
+            font-size: 0.13rem;
+            padding: 0.04rem 0;
             .commentitem_one_top{
                 display: flex;
                 align-items: center;
                 img{
-                    width: 20px;
-                    height: 20px;
+                    width: 0.2rem;
+                    height: 0.2rem;
                     border-radius: 50%;
-                    border: 1px solid #bfbfbf;
-                    margin: 0 10px;
+                    border: 0.01rem solid #bfbfbf;
+                    margin: 0 0.1rem;
                 }
                 p{
                     span{
@@ -53,7 +53,7 @@ export default {
                 }
             }
             .commentitem_one_text{
-                padding-left: 40px;
+                padding-left: 0.4rem;
                 width: 100%;
             }
         }

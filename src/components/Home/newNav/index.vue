@@ -37,10 +37,10 @@ export default {
 
 <style lang="scss" scoped>
     .newNav{
-        height: calc(100% - 50px);
+        height: calc(100% - 0.5rem);
         width: 100%;
         position: absolute;
-        top: 50px;
+        top: 0.5rem;
         z-index: 5;
         .newNav_background{
             background: black;
@@ -52,14 +52,14 @@ export default {
             top: 0;
             background: white;
             width: 100%;
-            padding: 10px 30px;
+            padding: 0.1rem 0.3rem;
             .newNav_text_item{
                 color: #848484;
-                font-size: 14px;
-                width: 63px;
-                height: 30px;
+                font-size: 0.14rem;
+                width: 0.63rem;
+                height: 0.3rem;
                 text-align: center;
-                line-height: 30px;
+                line-height: 0.3rem;
                 float: left;
             }
             .newNav_text_bottom{

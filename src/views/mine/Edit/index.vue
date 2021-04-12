@@ -152,6 +152,7 @@ export default {
             justify-content: center;
             margin-top: 0.3rem;
             padding: 0.15rem 0;
+            font-size: 0.16rem;
         }
         .editexit{
             background: white;

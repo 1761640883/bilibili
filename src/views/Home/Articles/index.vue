@@ -382,8 +382,8 @@ export default {
             } 
             .articles_center_commend{
                 border-top: 0.01rem solid #f7f7f7;
-                padding: 0 0.12rem;
                 h2{
+                    padding: 0 0.12rem;
                     height: 0.46rem;
                     font-size: 0.14rem;
                     color: #757575;

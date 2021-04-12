@@ -1,6 +1,6 @@
 <template>
-    <div class="nav">
-        <ul class="navUl" ref="navUl" :key="$store.state.navName">
+    <div class="nav" :key="$store.state.navName">
+        <ul class="navUl" ref="navUl">
             <!-- <li v-for="data in navlist" :key="data._id" @click.stop="handleToActive($event, data._id)" class="li">{{data.title}}</li> -->
             <li v-for="data in navlist" :key="data._id" @click.stop="handleToActive(data._id, data.title)" class="li">{{data.title}}</li>
         </ul>
@@ -65,6 +65,7 @@ export default {
             white-space: nowrap;
             overflow-x: scroll;
             overflow-y: hidden;
+            font-size: 0.16rem;
             li{
                 padding: 0 0.2rem;
                 line-height: 0.4rem;
@@ -73,10 +74,10 @@ export default {
                 color: #fb7299;
                 position: relative;
                 &::after{
-                    content: '';
+                    content: ' ';
                     display: block;
                     background: #fb7299;
-                    width: 0.28rem;
+                    // width: 0.28rem;
                     height: 0.02rem;
                     position: absolute;
                     bottom: 0.18rem;

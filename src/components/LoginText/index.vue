@@ -47,6 +47,7 @@ export default {
         background: white;
         border-top: 0.01rem solid #ededed;
         border-bottom: 0.01rem solid #ededed;
+        font-size: 0.16rem;
         span{
             display: block;
             width: 0.8rem;

@@ -104,6 +104,9 @@ export default {
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                    div{
+                        font-size: 0.16rem;
+                    }
                 }
             } 
         }

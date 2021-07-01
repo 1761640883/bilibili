@@ -1,5 +1,8 @@
 # bilibili
 
+## 注意
+接口已失效
+
 ## Project setup
 ```
 npm install
